@@ -8,13 +8,13 @@
 </head>
 <body ng-cloak>
 	<header class="header">
-		<div class="container">
+		<div class="container-fluid">
 			<h1 class="name">AngularTrello</h1>
 		</div>
 	</header>
 
-	<section id="list-container" class="list-container" ng-controller='listsCtrl as listsCtrl'>
-		<div class="container">
+	<section  ng-controller='listsCtrl as listsCtrl'>
+		<div class="container-fluid">
 			<div class="row">
 				<section class="list col-md-3 col-sm-6" ng-repeat='list in listsCtrl.lists' ng-controller='listCtrl as listCtrl'>
 					<h1>{{list.listName}}</h1>
