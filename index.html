@@ -29,8 +29,8 @@
 
 						<div ng-if='cardCtrl.isEditing'>
 							<form ng-submit="cardCtrl.updateCard()">
-								<input type="text" ng-model='cardCtrl.editingCard.description' close-editing is-editing='cardCtrl.isEditing'>
-								<select class="select" ng-model='cardCtrl.editingCard.list_id' ng-change='cardCtrl.updateCard()' ng-options='list.id as list.listName for list in listsCtrl.lists'></select>
+								<input type="text" ng-model='cardCtrl.editingCard.description' close-editing is-editing='cardCtrl.isEditing' class="card__input">
+								<select class="card__input" ng-model='cardCtrl.editingCard.list_id' ng-change='cardCtrl.updateCard()' ng-options='list.id as list.listName for list in listsCtrl.lists'></select>
 							</form>
 						</div>
 					</div>
